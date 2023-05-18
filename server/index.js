@@ -14,10 +14,10 @@ app.listen(3002, () => {
 
 // Let us create our database (mysql)
 const db = mysql.createConnection({
-    user: 'root',
-    host: 'localhost',
-    password: '', //If you have set xampp password please enter it here
-    database: 'plantdb',
+    user: 'id19500520_user',
+    host: 'https://fatec-teste2.000webhostapp.com/',
+    password: 'Unl7?Y|0{rrxnk*=', //If you have set xampp password please enter it here
+    database: 'id19500520_db',
 })
 
 // let us now create a route to the server that will register a user
@@ -28,7 +28,7 @@ app.post('/register', (req, res) => {
     const sentPassword = req.body.Password
 
     // Lets create SQL statement to insert the user to the Database table Users
-    const SQL = 'INSERT INTO users (email, username, password) VALUES (?,?,?)'
+    const SQL = 'INSERT INTO users_dt (email, username, password) VALUES (?,?,?)'
     const Values = [sentEmail, sentUserName, sentPassword]
 
     // Query to execute the sql statement stated above
@@ -57,9 +57,9 @@ app.post('/login', (req, res) => {
             if(err) {
                 res.send({error: err})
             }
-            if(results.length > 0) {
-                res.send(results)
-            }
+            //if(results.length > 0) {
+                //res.send(results)
+            //}
             else{
                 res.send({message: `Credentials Don't match!`})
             }

@@ -13,8 +13,8 @@ const Top = () => {
     <div className="topSection">
       <div className="headerSection flex">
         <div className="title">
-          <h1>Welcome to Planti.</h1>
-          <p>Hello Gilbert, Welcome back!</p>
+          <h1>Bem-vindo</h1>
+          <p>Hello Márcio, Welcome back!</p>
         </div>
 
         <div className="searchBar flex">
@@ -29,9 +29,18 @@ const Top = () => {
             <img src={img} alt="Admin Image" />
           </div>
         </div>
-
       </div>
 
+      <div className="cardSection flex" style={{backgroundColor: 'red'}}>          
+          <div className="rightCard flex">
+            <h1>teste2</h1>
+          </div>
+          <div className="sideBarCard">
+            <h1>teste</h1>
+          </div>
+      </div>
+
+      {/*}
       <div className="cardSection flex">
         <div className="rightCard flex">
           <h1>Create and sell extraordinary products</h1>
@@ -70,7 +79,7 @@ const Top = () => {
             <div className="imgDiv">
               <img src={img2} alt="Image Name" />
             </div>
-            {/* We Shall use this card later */}
+            {/* We Shall use this card later 
             <div className="sideBarCard">
               <BsQuestionCircle className="icon" />
               <div className="cardContent">
@@ -86,7 +95,7 @@ const Top = () => {
           </div>
         </div>
 
-      </div>
+      </div>*/}
     </div>
   )
 }

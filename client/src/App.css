@@ -149,20 +149,23 @@ video {
   left: 0;
 }
 .loginPage .container .videoDiv .textDiv,
-.registerPage .container .videoDiv .textDiv {
-  position: relative;
+.registerPage .container .videoDiv .textDiv {  
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .loginPage .container .videoDiv .textDiv .title,
 .registerPage .container .videoDiv .textDiv .title {
-  color: var(--whiteColor);
-  font-size: 35px;
-  font-weight: 800;
+  color: var(--blackColor);
+  background-color: white;
+  font-size: 25px;
+  font-weight: 600;    
 }
 .loginPage .container .videoDiv .textDiv p,
 .registerPage .container .videoDiv .textDiv p {
-  color: var(--whiteColor);
+  color: var(--blackColor);
   padding: 1rem;
-  font-weight: 400;
+  font-weight: 400;    
 }
 .loginPage .container .videoDiv .footerDiv,
 .registerPage .container .videoDiv .footerDiv {
@@ -210,7 +213,7 @@ video {
 }
 .loginPage .container .formDiv .headerDiv img,
 .registerPage .container .formDiv .headerDiv img {
-  width: 60px;
+  width: 150px;
   padding-bottom: 0.5rem;
 }
 .loginPage .container .formDiv .headerDiv h3,
@@ -344,7 +347,7 @@ wanna see how to create/build it along. */
   }
   .loginPage .container .videoDiv .textDiv .title,
   .registerPage .container .videoDiv .textDiv .title {
-    font-size: 20px;
+    font-size: 20px;    
   }
   .loginPage .container .videoDiv .textDiv p,
   .registerPage .container .videoDiv .textDiv p {

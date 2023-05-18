@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `users_dt` (
   `id` int(11) NOT NULL,
   `email` varchar(100) NOT NULL,
   `username` varchar(100) NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `email`, `username`, `password`) VALUES
+INSERT INTO `users_dt` (`id`, `email`, `username`, `password`) VALUES
 (4, 'admin@gmail.com', 'admin', 'admin');
 
 --
@@ -48,7 +48,7 @@ INSERT INTO `users` (`id`, `email`, `username`, `password`) VALUES
 --
 -- Indexes for table `users`
 --
-ALTER TABLE `users`
+ALTER TABLE `users_dt`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -58,7 +58,7 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `users`
+ALTER TABLE `users_dt`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
