@@ -10,6 +10,7 @@ import { BsFillShieldLockFill } from "react-icons/bs";
 import { AiOutlineSwapRight } from "react-icons/ai";
 
 const Login = () => {
+<<<<<<< HEAD
   const [loginUserName, setLoginUserName] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const navigateTo = useNavigate();
@@ -38,6 +39,29 @@ const Login = () => {
       setTimeout(() => {
         setStatusHolder("message");
       }, 2000);
+=======
+    const [loginUserName, setLoginUserName] = useState('');
+    const [loginPassword, setLoginPassword] = useState('');
+    const navigateTo = useNavigate();
+    const [loginStatus, setLoginStatus] = useState('');
+    const [statusHolder, setStatusHolder] = useState('message');
+
+    const loginUser = (e) => {
+        e.preventDefault();
+        Axios.post('https://unmfgt-3002.csb.app/login', {
+            LoginUserName: loginUserName,
+            LoginPassword: loginPassword
+        }).then((response) => {
+            console.log();
+            if (response.data.message || loginUserName == '' || loginPassword ==  '') {
+                navigateTo('/') 
+                setLoginStatus(`Credentials Don't Exist!`)
+            }
+            else {
+                navigateTo('/dashboard')
+            }
+        })
+>>>>>>> 9bb608e21b8ab8d61d4a2f49f46619fda4b89071
     }
   }, [loginStatus]);
 
