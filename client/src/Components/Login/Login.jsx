@@ -20,7 +20,7 @@ const Login = () => {
 
     const loginUser = (e) => {
         e.preventDefault();
-        Axios.post('https://unmfgt-3002.csb.app/login', {
+        Axios.post('https://backend-cpqd-digital-twin.onrender.com/login', {
             LoginUserName: loginUserName,
             LoginPassword: loginPassword
         }).then((response) => {
